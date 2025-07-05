@@ -42,7 +42,7 @@ export const AboutSection = () =>{
                             <div className="text-left">
                                 <h4 className="font-text-semibold text-lg">Webbutveckling</h4>
                                 <p className="text-muted-foreground">
-                                    Lite relevant text om mina erfarenheter
+                                    Ändrar lite för att se hur det blir i web appen
                                 </p>
                             </div>
                         </div>
