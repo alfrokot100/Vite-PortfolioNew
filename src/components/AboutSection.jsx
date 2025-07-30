@@ -42,7 +42,10 @@ export const AboutSection = () =>{
                             <div className="text-left">
                                 <h4 className="font-text-semibold text-lg">Webbutveckling</h4>
                                 <p className="text-muted-foreground">
-                                    Ändrar lite för att se hur det blir i web appen
+                                    Jag har arbetat med både frontend och backend i flera projekt, främst med React, TypeScript och .NET.
+                                    Jag strävar efter att skriva ren och återanvändbar kod,
+                                    och har erfarenhet av att bygga responsiva gränssnitt med Tailwind CSS.
+
                                 </p>
                             </div>
                         </div>
@@ -53,9 +56,12 @@ export const AboutSection = () =>{
                                 <User className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-text-semibold text-lg">Webbutveckling</h4>
+                                <h4 className="font-text-semibold text-lg">Samarbete & Kommunikation</h4>
                                 <p className="text-muted-foreground">
-                                    Lite relevant text om mina erfarenheter
+                                    Jag trivs i team och är van vid att arbeta agilt med verktyg som Git, GitHub och Trello. 
+                                    Jag värdesätter tydlig kommunikation och tycker om att diskutera lösningar
+                                    tillsammans för att uppnå bästa möjliga resultat.
+
                                 </p>
                             </div>
                         </div>
@@ -66,9 +72,11 @@ export const AboutSection = () =>{
                                 <Briefcase className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-text-semibold text-lg">Webbutveckling</h4>
+                                <h4 className="font-text-semibold text-lg">Praktisk Erfarenhet</h4>
                                 <p className="text-muted-foreground">
-                                    Lite relevant text om mina erfarenheter
+                                    Jag har arbetat med flera fullstack-projekt, bland annat ett bokningssystem och en bloggplattform. 
+                                    Jag har god vana av att arbeta med databaser som SQL Server och att utveckla API:er med ASP.NET Core,
+                                    med fokus på struktur, prestanda och säkerhet.
                                 </p>
                             </div>
                         </div>

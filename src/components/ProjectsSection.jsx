@@ -24,7 +24,7 @@ export const ProjectSection = () =>{
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center"> Mina <span className="text-primary"> Projekt </span></h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                Här är några projekt som jag har arbetat med.
+                Här är några projekt som jag har arbetat med
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
@@ -53,11 +53,7 @@ export const ProjectSection = () =>{
                         <p className="text-muted-foreground text-sm mb-4">{projects.description}</p>
 
                         <div className="flex justify-between items-center">
-                            <div className="flex space-x-3">
-                                <a> <ExternalLink /> 
-                                
-                                </a>
-                                 </div> 
+                            
                         </div>
                         </div>
                     </div>
@@ -69,7 +65,7 @@ export const ProjectSection = () =>{
                     target="_blank" 
                     href="https://github.com/alfrokot100"
                     >
-                    Kolla gärna in min Github <ArrowRight size={16} />
+                    Kolla gärna in mitt Github konto! <ArrowRight size={16} />
                 </a>
 
             </div>
