@@ -29,7 +29,7 @@ export const ProjectSection = () =>{
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
                 {projects.map((projects, key) =>(
-                    <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+                    <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs"
                     > 
 
 
@@ -52,9 +52,9 @@ export const ProjectSection = () =>{
                         <h3 className="text-xl font-semibold mb-1"> {projects.title}</h3>
                         <p className="text-muted-foreground text-sm mb-4">{projects.description}</p>
 
-                        <div className="flex justify-between items-center">
-                            
-                        </div>
+                            <div className="flex justify-between items-center">
+                                
+                            </div>
                         </div>
                     </div>
                 ))}

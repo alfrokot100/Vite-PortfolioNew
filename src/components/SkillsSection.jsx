@@ -4,28 +4,28 @@ import { cn } from "../lib/utils";
 
 const skills = [
     //Frontend
-    {name: "HTML/CSS", level: 95, category: "frontend"},
-    {name: "Javascript", level: 87, category: "frontend"},
-    {name: "React", level: 90, category: "frontend"},
-    {name: "Tailwind CSS", level: 45, category: "frontend"},
-    {name: "Next.js", level: 50, category: "frontend"},
+    {name: "HTML/CSS", level: "Stark", category: "frontend"},
+    {name: "Javascript", level: "Stark", category: "frontend"},
+    {name: "React", level: "Stark", category: "frontend"},
+    {name: "Tailwind CSS", level: "Bekant", category: "frontend"},
+    {name: "Next.js", level: "Bekant", category: "frontend"},
 
     //Backend
-    {name: "Node.js", level: 80, category: "backend"},
-    {name: "C# .NET", level: 85, category: "backend"},
-    {name: "REST APIs", level: 80, category: "backend"},
-    {name: "SQL", level: 85, category: "backend"},
-    {name: "MySQL", level: 80, category: "backend"},
-    {name: "Entity Framework Core", level: 85, category: "backend"},
-    {name: "ASP.NET Core", level: 80, category: "backend"},
+    {name: "Node.js", level: "Van", category: "backend"},
+    {name: "C# .NET", level: "Stark", category: "backend"},
+    {name: "REST APIs", level: "Van", category: "backend"},
+    {name: "SQL", level: "Stark", category: "backend"},
+    {name: "MySQL", level: "Van", category: "backend"},
+    {name: "Entity Framework Core", level: "Stark", category: "backend"},
+    {name: "ASP.NET Core", level: "Van", category: "backend"},
 
     //Tools
-    {name: "Git/Github", level: 90, category: "tools"},
-    {name: "Figma", level: 70, category: "tools"},
-    {name: "Unified Modeling Language (UML)", level: 85, category: "tools"},
-    {name: "Software Testing", level: 80, category: "tools"},
-    {name: "VS Code", level: 80, category: "tools"},
-    {name: "Visual Studio", level: 85, category: "tools"},
+    {name: "Git/Github", level: "Stark", category: "tools"},
+    {name: "Figma", level: "Van", category: "tools"},
+    {name: "Unified Modeling Language (UML)", level: "Bekant", category: "tools"},
+    {name: "Software Testing", level: "Bekant", category: "tools"},
+    {name: "VS Code", level: "Stark", category: "tools"},
+    {name: "Visual Studio", level: "Stark", category: "tools"},
 
 ];
 
@@ -40,7 +40,7 @@ export const SkillsSection = () => {
     return <section id="skills" className="py-24 px-4 relative bg-secondary/30">
      <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            My <span className="text-primary"> Skills</span>
+            Mina <span className="text-primary"> Färdigheter</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -58,21 +58,20 @@ export const SkillsSection = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filterdSkills.map((skill, key) =>(
-                <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
-                    <div className="text-left mb-4 ">
-                        <h3 className="font-semi-bold text-lg">{skill.name}</h3>
-                    </div>
+                <div className="flex justify-between items-center">
+  <h3 className="font-semibold">{skill.name}</h3>
+  <span
+    className={cn(
+      "px-2 py-1 text-xs rounded-full",
+      skill.level === "Stark" && "bg-green-100 text-green-700",
+      skill.level === "Van" && "bg-yellow-100 text-yellow-700",
+      skill.level === "Bekant" && "bg-gray-100 text-gray-700"
+    )}
+  >
+    {skill.level}
+  </span>
+</div>
 
-                    <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                    <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" 
-                    style={{width: skill.level + "%" }} 
-                    />
-                    </div>
-
-                    <div className="text-right mt-1">
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                    </div>
-                </div>
             ))}
         </div>
      </div>
